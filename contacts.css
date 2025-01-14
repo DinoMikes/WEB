@@ -1,0 +1,174 @@
+.breadcrumbs-container {
+    display: flex;
+    justify-content: flex-start; 
+    padding-left: 50px; 
+    padding-top: 20px; 
+    overflow: hidden;
+  }
+
+  .breadcrumbs {
+    display: flex; 
+    align-items: center; 
+    font-family: Arial, sans-serif; 
+    position: relative; 
+  }
+
+  .crumb {
+    position: relative; 
+    text-decoration: none; 
+    color: #000000; 
+    font-size: 16px; 
+    font-weight: bold; 
+    padding: 10px 20px; 
+    background: linear-gradient(to top, #3e9494, rgba(255, 255, 255, 0.3)); 
+    border-radius: 0 50px 50px 0;          
+    border: 1px solid #4a90e2; 
+    border-left: none;
+    margin-left: -20px; 
+    z-index: 10; 
+    transition: background 0.3s ease;
+  }
+
+  .crumb:nth-child(2) {
+    z-index: 3;
+  }
+
+  .crumb:nth-child(3) {
+    z-index: 2;
+  }
+
+  .crumb + .crumb {
+    margin-left: -15px; 
+  }
+
+  .crumb::after {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    right: -10px; 
+    height: 100%;
+    background: linear-gradient(to right, rgb(255, 255, 255), #ffffff);
+    z-index: 11; 
+  }
+  .breadcrumbs::after {
+      content: ''; 
+      position: absolute;
+      top: 0;
+      left: 80%; 
+      height: 100%;
+      width: 120px; 
+      background: linear-gradient(to top, #3e9494, rgba(255, 255, 255, 0.3)); 
+      z-index: -10; 
+  }
+
+  .current {
+    background: linear-gradient(to top, #3e9494, rgba(255, 255, 255, 0.3)); 
+    z-index: 7; 
+  }
+
+  .input-field {
+      border: 1px solid #356EAD;
+      box-sizing: border-box;
+      border-radius: 10px;
+      opacity: 0.4;
+      padding: 10px;
+      width: 100%; 
+      margin-bottom: 10px; 
+  }
+  .submit-button {
+      background: #5A98D0;
+      box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+      border-radius: 10px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      padding: 10px 20px; 
+      border: none; 
+      cursor: pointer; 
+  }
+  header {
+      display: flex;
+      flex-direction: column; 
+      align-items: flex-start;
+      padding: 10px 20px;
+      height: 100vh;
+      color: black;
+  }
+  img {
+      max-width: 150px;
+      height: auto;
+      margin-bottom: 20px; 
+  }
+  nav {
+      margin-top: 20px; 
+  }
+  ul {
+      list-style-type: none;
+      padding: 0;
+  }
+  li {
+      margin-right: 20px;
+      margin-bottom: 8px;
+  }
+  a {
+      text-decoration: none;
+      color: black;
+  }
+  footer {
+      background-color: #f1f1f1; 
+      padding: 20px; 
+      text-align: center; 
+  }
+  form {
+      display: flex;
+      flex-direction: column; 
+      margin: 20px 0; 
+  }
+  label {
+      margin: 5px 0; 
+  }
+  input, textarea {
+      margin-bottom: 10px;
+      padding: 8px; 
+      border: 1px solid #ccc; 
+      border-radius: 4px;
+  }
+  button {
+      background-color: #3939ff; 
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer; 
+  }
+  .styled-h2 {
+      font-weight: 500;
+      font-size: 44px;
+      text-align: center;
+  }
+  .contact-container {
+      background-image: url('C:\Users\user\OneDrive\Рабочий стол\изображение_на_задний_фон.jpg'); 
+      background-size: cover; 
+      background-position: center; 
+      padding: 20px;
+      color: white; 
+  }
+  .submit-button {
+      background: linear-gradient(to right, #5d85da, #9000ff); 
+      border: none; 
+      color: white; 
+      padding: 15px 30px; 
+      border-radius: 30px; 
+      font-size: 20px; 
+      font-weight: bold;
+      letter-spacing: 2px;
+      cursor: pointer; 
+      transition: background 0.3s; 
+  }
+
+  .submit-button:hover {
+      background: linear-gradient(to right, #8f94fb, #4e54c8); 
+  }
