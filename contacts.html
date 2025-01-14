@@ -1,63 +1,88 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <div class="breadcrumbs-container">
-        <div class="breadcrumbs">
-          <a href="/" class="crumb">Главная</a>
-          <a href="/category" class="crumb">Категория</a>
-          <span class="crumb current">Текущая страница</span>
-        </div>
-    </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contacts.css">
+    <title>Контакты</title>
 </head>
 <body>
-    <header>
-        <img src="C:\Users\user\WEB-UTMN\логотип.jpg" alt="Логотип"/>
+    <header class="site-header">
+        <img src="C:\Users\user\WEB-UTMN\логотип.jpg" alt="Логотип" class="logo"/>
         <nav>
-            <ul>
+            <ul class="nav-list">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <hr>
+
+    <div class="breadcrumbs-container">
+        <div class="breadcrumbs">
+            <h2>Навигация</h2>
+            <a href="/" class="crumb">Главная</a>
+            <a href="/category" class="crumb">Категория</a>
+            <span class="crumb current">Текущая страница</span>
+        </div>
+    </div>
+
+    <hr>
+
+    <main class="contact-main">
         <h2 class="styled-h2">Contact Us</h2>
         <p>С нами просто</p>
         <img src="C:\Users\user\WEB-UTMN\котик.jpg" alt="Произвольное изображение" style="max-width: 350px;">
-        
-        <h4>Володарского 7</h4>
-        <p>г. Тюмень</p>
 
-        <h4>Phone</h4>
-        <ul>
-            <li>89120872833</li>
-            <li>89123838632</li>
-        </ul>
+        <section class="address-section">
+            <h3>Адрес</h3>
+            <h4>Володарского 7</h4>
+            <p>г. Тюмень</p>
+        </section>
 
-        <h4>Online service</h4>
-        <ul>
-        
-            <li><a href="https://ru.pinterest.com/pin/70437489341416/">pinterest.com</a></li>
-            <li><a href="tonamolcanova@gmail.com">tonamolcanova@gmail.com</a></li>
-        </ul>
+        <hr>
 
-        <h4>Send us a message</h4>
-        <form>
-            <label for="fullName">Full Name:</label>
-            <input type="text" class="input-field" id="fullName" name="fullName" required>
+        <section class="phone-section">
+            <h3>Телефоны</h3>
+            <ul>
+                <li>89120872833</li>
+                <li>89123838632</li>
+            </ul>
+        </section>
 
-            <label for="email">Email:</label>
-            <input type="email" class="input-field" id="email" name="email" required>
+        <hr>
 
-            <label for="message">Message:</label>
-            <textarea class="input-field" id="message" name="message" rows="4" required></textarea>
+        <section class="online-services-section">
+            <h3>Онлайн-сервисы</h3>
+            <ul>
+                <li><a href="https://ru.pinterest.com/pin/70437489341416/">pinterest.com</a></li>
+                <li><a href="mailto:tonamolcanova@gmail.com">tonamolcanova@gmail.com</a></li>
+            </ul>
+        </section>
 
-            <button type="submit" class="submit-button">Submit</button>
-        </form>
+        <hr>
+
+        <section class="message-section">
+            <h3>Отправьте нам сообщение</h3>
+            <form>
+                <label for="fullName">Полное имя:</label>
+                <input type="text" class="input-field" id="fullName" name="fullName" required>
+
+                <label for="email">Электронная почта:</label>
+                <input type="email" class="input-field" id="email" name="email" required>
+
+                <label for="message">Сообщение:</label>
+                <textarea class="input-field" id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="submit-button">Отправить</button>
+            </form>
+        </section>
     </main>
 
-    <footer>
+    <hr>
+
+    <footer class="site-footer">
         <h3>Контакты компании</h3>
         <p>Свяжитесь с нами</p>
         <hr>
@@ -69,4 +94,3 @@
     </footer>
 </body>
 </html>
-
